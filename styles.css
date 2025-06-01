@@ -9,6 +9,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #080001;
+  height: 100vh;
 }
 
 
@@ -238,7 +239,7 @@ animation: colorchange 3s 60 linear 1s;
     padding: 1em 5em;
     position: absolute;
     top: 24.5em;
-    left: 60em;
+    left: 50em;
     border-radius: 1.2rem;
     border: none;
     font-weight: bold;
