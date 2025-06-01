@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>Score Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- background image div -->
+ <div class="pic">
+    <!-- Scoreboard audio -->
+     
+    <audio src="03.mp3" autoplay loop></audio>
+    <!-- Swish sfx when pressing buttons -->
+     <audio src="basketball-swish-sound-effect-made-with-Voicemod.mp3" id="Swish"> </audio>
+    
+    <!-- Container  displayed in a row-->
+    <div class="container">
+
+        <!-- Home Div -->
+        <div class="home">
+            <!--  Home title -->
+            <h1 class="home"> Home</h1>
+            <!-- Score Number 1 -->
+            <h2 class="number1" id="homeScore">0</h2>
+            <!-- Score title -->
+             <h2 class="score">Score</h2>
+
+             <!-- 3 buttons underneath the score -->
+             <div class="buttons">
+                <!-- Button +1,+2,+3 with correspnding onclick -->
+            <button class ="btn" onclick="addHome1()" aria-label="a button that adds 1" id="btn1">+1</button>
+            <button class="btn" onclick="addHome2()" aria-label="a button that adds 2" id="btn2">+2</button>
+            <button class="btn" onclick="addHome3()" aria-label="a button that adds 3"id="btn3">+3</button>
+             </div>
+        </div>
+
+        
+        <!-- Guest Div  -->
+        <div class="guest">
+            <h1>Guest</h1>
+            <!-- Guest score -->
+            <h2 class="number2" id="guestScore">0</h2>
+            <h2 class="score">Score</h2>
+
+                 <!-- 3 buttons underneath the score -->
+             <div class="buttons">
+            <!-- Button +1,+2,+3 with correspnding onclick -->
+            <button class ="btn" onclick="addGuest1()" aria-label="a button that adds 1" id="btn4">+1</button>
+            <button class="btn" onclick="addGuest2()" aria-label="a button that adds 2" id="btn5">+2</button>
+            <button class="btn" onclick="addGuest3()" aria-label="a button that adds 3" id="btn6">+3</button>
+             </div>
+            
+             <!-- Please review entire document -->
+           
+            
+        </div>
+
+
+    </div>
+
+
+
+    
+
+       
+
+        <button class="reset" onclick="reset()">Reset</button>
+        <audio src="mixkit-basketball-buzzer-1647.wav" id="restart"></audio>
+   
+    
+    
+</body>
+</html>

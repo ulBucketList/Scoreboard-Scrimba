@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+
+body{
+   background-image: url('empty-basketball-courts-focusing-free-throw-lines-baskets.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #080001;
+}
+
+
+/* This is the scoreboard front from dafont.com. */
+@font-face {
+    font-family: "score";
+    src: url(scoreboard.ttf);
+}
+
+
+
+/* This is the color palette for all the "Scorecard"! */
+:root{
+    --bgcolor: #204030;
+--scorecolor: #BE123C;
+--scbg: #080001;
+--font: "score", sans-serif;
+--titleoutline: #EEEEEE;
+
+
+} 
+
+
+
+
+/* container styling */
+.container{
+
+    max-width: 475px;
+    height: 385px;
+    background-color: var(--bgcolor);
+    border: solid 2px var(--bgcolor);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    font-family: var(--font);
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    position: relative;
+    
+}
+
+h1, h2{
+    font-size: 55px;
+    color: var(--titleoutline);
+    margin-bottom: 0;
+}
+/* score 1 */
+.number1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--scorecolor);
+    font-size: 70px;
+    border: solid 1px var(--scbg);
+background-color: var(--scbg);
+width: 110px;
+height: 80px;
+margin-top: 20px;
+animation: colorchange 3s 60 linear;
+}
+
+/* Score 2 */
+.number2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--scorecolor);
+    font-size: 70px;
+    border: solid 1px var(--scbg);
+    background-color: var(--scbg);
+    width: 110px;
+    height: 80px;
+    margin-top: 20px;
+ animation: colorchange 3s 60 linear 1s;
+}
+/* Score Styling */
+.score{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+/* button alignment */
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3px;
+}
+/* button styling */
+.btn{
+    background-color: 	#0f403f;
+    color: var(--titleoutline);
+    border: solid 1px var(--titleoutline);
+    
+}
+
+/* animation */
+@keyframes colorchange{
+    0%{
+        color: var(--scorecolor);
+    }
+    10%{
+        color: red;
+    }
+    20%{
+        color: var(--scorecolor);
+    }
+    30%{
+        color: red;
+    }
+    40%{
+        color: red;
+    }
+    50%{
+        color: var(--scorecolor);
+    }
+    60%{
+        color: red;
+    }
+    70%{
+        color: red;
+    }
+    80%{
+        color: red;
+    }
+    90%{
+        color: var(--scorecolor);
+    }
+    100%{
+        color: red;
+    }
+}
+
+@media (width: 500px) {
+    .container{
+        
+        margin-top: 100px;
+    }
+    
+}
+
+
+/* Media Queries */
+@media (max-width: 450px){
+.container{
+
+    max-width: 375px;
+    height: 285px;
+    background-color: var(--bgcolor);
+    border: solid 2px var(--bgcolor);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    font-family: var(--font);
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 30%;
+    margin-bottom: 10%;
+    
+}
+
+h1, h2{
+    font-size: 55px;
+    color: var(--titleoutline);
+    margin-bottom: 0;
+}
+
+.number1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--scorecolor);
+    font-size: 70px;
+    border: solid 1px var(--scbg);
+background-color: var(--scbg);
+width: 110px;
+height: 80px;
+margin-top: 20px;
+animation: colorchange 3s 60 linear;
+}
+
+
+.number2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--scorecolor);
+    font-size: 70px;
+    border: solid 1px var(--scbg);
+background-color: var(--scbg);
+width: 110px;
+height: 80px;
+margin-top: 20px;
+animation: colorchange 3s 60 linear 1s;
+}
+
+.score{
+    font-size: 25px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    text-align: center;
+}
+
+.btn{
+    background-color: var(--bgcolor);
+    color: var(--titleoutline);
+    border: solid 1px var(--titleoutline);
+}
+
+}
+
+.reset{
+
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1em 5em;
+    position: absolute;
+    top: 24.5em;
+    left: 60em;
+    border-radius: 1.2rem;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #204030;
+    backdrop-filter: blur(1px);
+    color: var(--titleoutline);
+    color: var(--titleoutline);
+
+
+}
+
+
+    
+
+
+
